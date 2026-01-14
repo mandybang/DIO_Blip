@@ -1,0 +1,11 @@
+const comando = gets(); // Lê o comando enviado ao bot
+
+if (comando === "start") {
+    print("Bot started");
+} else if (comando === "stop") {
+    print("Bot stopped");
+} else if (comando === "pause") {
+    print("Bot paused");
+} else {
+    print("unknown command");
+}
