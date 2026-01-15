@@ -1,0 +1,25 @@
+class Message {
+    constructor(sender, content) {
+        this.sender = sender;
+        this.content = content;
+    }
+
+    format() {
+        return `From ${this.sender}: ${this.content}`;
+    }
+}
+
+// Lê a entrada do usuário
+const input = gets();
+
+// Verifica se a entrada contém ":"
+if (input.includes(":")) {
+    const partes = input.split(":");
+    const sender = partes[0];
+    const content = partes.slice(1).join(":").trim();
+
+    const message = new Message(sender, content);
+    print(message.format());
+} else {
+    print("Invalid message");
+}
