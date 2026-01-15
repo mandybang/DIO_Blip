@@ -1,6 +1,11 @@
-function converterParaMaiusculas(mensagem) {
-    return mensagem.toUpperCase();
-}
+// Lê a mensagem enviada pelo usuário
+const mensagem = gets();
 
-const mensagem = gets(); // Lê a mensagem do usuário
-print(converterParaMaiusculas(mensagem));
+// TODO: Converta todas as letras minúsculas da mensagem para maiúsculas
+// Dica: existe um método nativo de string para isso
+
+// Imprima a mensagem padronizada
+// print(mensagemPadronizada);
+
+const mensagemPadronizada = mensagem.toUpperCase();
+print(mensagemPadronizada)
