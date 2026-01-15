@@ -1,0 +1,17 @@
+// Lê a entrada JSON da mensagem
+const entrada = gets();
+
+let resultado = "indefinido";
+
+try {
+    const objeto = JSON.parse(entrada);
+
+    if (objeto.canal && objeto.canal.trim() !== "") {
+        resultado = objeto.canal.toLowerCase();
+    }
+} catch (e) {
+    resultado = "indefinido";
+}
+
+// Imprime o resultado
+print(resultado);
