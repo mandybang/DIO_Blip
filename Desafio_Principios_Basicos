@@ -1,0 +1,6 @@
+function converterParaMaiusculas(mensagem) {
+    return mensagem.toUpperCase();
+}
+
+const mensagem = gets(); // Lê a mensagem do usuário
+print(converterParaMaiusculas(mensagem));
