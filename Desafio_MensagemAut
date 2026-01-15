@@ -1,0 +1,18 @@
+// Lê a entrada do usuário
+const entrada = gets();
+
+// Verifica se a entrada contém ":"
+if (entrada.includes(":")) {
+    const partes = entrada.split(":");
+    const cliente = partes[0];
+    const texto = partes.slice(1).join(":");
+
+    const mensagem = {
+        cliente: cliente,
+        texto: texto
+    };
+
+    print(`Para ${mensagem.cliente}: ${mensagem.texto}`);
+} else {
+    print("Formato invalido");
+}
